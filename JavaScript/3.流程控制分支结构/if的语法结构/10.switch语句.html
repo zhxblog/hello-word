@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // switch语句也是多分支语句，它用于基于不同的条件来执行不同的代码。当要针对变量设置一系列的"特定值"(比较固定的) 的选项时，就可以使用 switch。
+        //1。switch语句也是多分支语句 也可以实现多选1
+        //2。语法结构 switch转换、开关 case 小例子或者选项的意思
+        // switch (表达式) {
+        //     case value1:
+        //         执行语句1;
+        //         break;    //退出整个语句
+        //     case value2:
+        //         执行语句2;
+        //         break;
+        //     default:
+        //         执行最后的语句;
+
+        // }
+        // 3。执行思路利用我们的表达式的值和case后面的选项值相匹配如果匹配上，就执行该case 里面的语句如果都没有匹配上，那么执行 default里面的语句 
+        // 4。代码验证
+        switch (2) {
+            case 1:
+                console.log('这是1');;
+                break;
+            case 2:
+                console.log('这是2');;
+                break;
+            default:
+                console.log('没有匹配结果');
+
+        }
+
+        // 注意事项：1。我们开发里面表达式我们经常写成变量
+        //2。我们 num 的值和 case 里面的值相匹配 的时候 是  全等  必须是值和数据类型  一致才可以
+        //3.break 如果当前的 case 里没有 break  则不会退出switch 是继续执行下一个case
+    </script>
+</body>
+
+</html>

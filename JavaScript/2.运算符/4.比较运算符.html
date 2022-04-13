@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log(3 >= 5); //false
+        console.log(2 <= 4); //true
+        //1.我们程序的等于符合是 ==   默认转换数据类型 会把字符串类型转换为数字类型
+        console.log(3 == 5); //false
+        console.log(10 == 10); //true
+        console.log(10 == '10'); //true
+        console.log(18 != 18); //false
+        //2.程序中有全等于  ===   一模一样 要求两侧的值 还有数据类型完全一致 才可以 true
+        console.log(10 === 10); //true
+        console.log(10 === '10'); //false
+
+
+        // 1.=    赋值  把右边的给左边
+        // 2.==   判断  判断两边值是否相等（注意此时有隐式转换）
+        // 3.===  全等  判断两边的值和数据类型是否完全相同
+    </script>
+
+</body>
+
+</html>

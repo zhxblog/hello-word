@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1。判断时间阶段。比如用户输入12点弹出中午好用户输入18点弹出傍晚好用户输入23点弹出深夜好
+        var time = prompt('请输入您的时间');
+        if (time <= 12) {
+            alert('中午好');
+        } else if (time <= 18) {
+            alert('傍晚好');
+        } else if (time == 23) {
+            alert('深夜好');
+        } else {
+            alert('您该睡了');
+        }
+    </script>
+</body>
+
+</html>
