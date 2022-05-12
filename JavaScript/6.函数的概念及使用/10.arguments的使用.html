@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 当我们不确定有多少个参数传递的时候，可以用arguments来获取。在JavaScript中，arguments实际上 它是当前函数的一个内置对象。所有函数都内置了一个arguments对象，arguments对象中存储了传递的 所有实参。
+
+        //arguments 的使用 只有函数才有 arguments对象 而且是每个函数内置好了
+        function fn() {
+            // console.log(arguments);里面存储了所有传递过来的实参 arguments=[1,2,3,]
+            // console.log(arguments.length);
+            // console.log(arguments[2]);
+            for (var i = 0; i < arguments.length; i++) {
+                console.log(arguments[i]);
+            }
+
+
+
+        }
+        fn(1, 2, 3);
+        fn(4, 5, 6);
+        //伪数组并不是真正意义上的数组
+        //1。具有数组的 length 属性 
+        //2。按照索引的方式进行存储的
+        //3。它没有真正数组的一些方法pop() push()等等
+    </script>
+</body>
+
+</html>
