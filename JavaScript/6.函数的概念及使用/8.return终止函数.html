@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //break：结束当前的循环体（如for、while)
+        //continue：跳出本次循环，继续执行下次循环（如for、while】
+        //return：不仅可以退出循环，还能够返回return语句中的值，同时还可以结束当前的函数体内的代码
+
+        //函数返回值注意事项
+        //1,return 终止函数
+        function getSum(num1, num2) {
+            return num1 + num2; //return 后面的代码不会被执行
+            alert('我是不会被执行的，return已经终止函数了')
+        }
+        console.log(getSum(1, 2));
+
+        //2，return 只能返回一个值
+
+        function fn(num1, num2) {
+            return num1, num2;
+
+        }
+        console.log(fn(1, 2));
+        //3,我们求任意两个数的 加减乘除结构
+        function getResult(num1, num2) {
+            return [num1 + num2, num1 - num2, num1 * num2, num1 / num2]
+        }
+        var re = getResult(1, 2); //返回的是一个数组
+        console.log(re);
+        //4、函数如果有返回return 则返回return 后面的值，如果函数后没有return 则返回undefined
+        function fun1() {
+            // return 666; return
+        }
+        console.log(fun1());
+    </script>
+</body>
+
+</html>

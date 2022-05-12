@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+</body>
+<script>
+    //1.函数做某种功能
+    function lock(aru) {
+        console.log(aru);
+
+    }
+    lock('大肘子');
+    //有的时候，我们会希望函数将估返回给调用者，此时通过使用return语句就可以实现。
+    //2.函数的返回值格式 return
+    // function 函数名() {
+    //     return 需要返回的结果;
+    // }
+    // 函数名();
+    //(1)我们函数是实现某种功能，最终的结果返回给调用者 函数名();通过return
+    //(2)只要函数遇到return，就把后面的结果返回给调用者;  函数名(); = return 需要返回的结果
+    //3.代码验证
+    function getReturn() {
+        return 666;
+    }
+    getReturn();
+    console.log(getReturn());
+</script>
+
+</html>
