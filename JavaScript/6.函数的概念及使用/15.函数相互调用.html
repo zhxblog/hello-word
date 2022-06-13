@@ -11,7 +11,16 @@
 <body>
 
     <script>
-        //dai131232
+        //函数是可以相互调用
+        function fn1() {
+            console.log(11);
+            fn2();
+        }
+        fn1();
+
+        function fn2() {
+            console.log(21);
+        }
     </script>
 </body>
 
