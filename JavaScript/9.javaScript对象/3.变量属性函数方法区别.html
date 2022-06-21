@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //变量、属性、函数、方法的区别
+        //1、变量和属性的相同点：他们都是用来存储数据的
+        var num = 10;
+        var obj = {
+            age: '18',
+            fn: function() { //方法（放在对象内部 是方法）
+
+            }
+        }
+
+        function fn() { //函数 （放在外面的  是函数）
+
+        }
+        console.log(obj.age);
+        //console.log(age);
+        //变量 单独声明并赋值 使用的时候直接写变量名 单独存在
+        //属性 在对象里面的不需要声明的 使用的时候必须是 对象.属性
+        //2、函数是单独声明 并且调用的 函数名（） 单独存在的
+        // 方法 在对象里面 调用的时候 对象.方法（）
+
+
+        //变量、属性、函数、方法总结
+
+        // 变量：单独声明赋值，单独存在
+        // 属性：对象里面的变量称为属性，不需要声明，用来描述该对象的特征
+        // 函数：单独存在的，通过“函数名()“的方式就可以调用
+        // 方法：对象里面的函数称为方法，方法不需要声明，使用“对象.方法名()”的方式就可以调用，方法用来描述该对象 的行为和功能。
+    </script>
+</body>
+
+</html>
