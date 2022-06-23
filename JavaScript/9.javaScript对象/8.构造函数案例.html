@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function beau(uname, utype, ublood, uattack) {
+            this.name = uname;
+            this.type = utype;
+            this.blood = ublood;
+            this.attack = function(att) {
+                console.log(att);
+
+            }
+        }
+        var Lianp = new beau('廉颇', '力量型', '500血量');
+        var Houy = new beau('后裔', '射手型', '100血量');
+        console.log(Lianp.name);
+        console.log(Lianp['type']);
+        console.log(Lianp.blood);
+        Lianp.attack('近战');
+
+        console.log(Houy.name);
+        console.log(Houy.type);
+        console.log(Houy.blood);
+        Houy.attack('远程');
+    </script>
+
+</body>
+
+</html>
