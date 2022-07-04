@@ -11,9 +11,29 @@
 <body>
     <script>
         // 程序随机生成一个1~10之间的数字，并让用户输入一个数字，
-        // 1。如果大于该数字，就提示，数字大了，继，猜：
+        // 1。如果大于该数字，就提示，数字大了，继续猜：
         // 2。如果小于该数字，就提示敌字小了，继续猜：
         // 3。如果等于该数字，就提示猜对了，结束程序。
+        // ①随机生成一个1~10的整数我们需要用到Math。random()方法
+        // ②需要一直猜到正确为止，所以一直循环，
+        // ③用while循环合适更简单。
+        // ④核心算法：使用if else if多分支语句来判断大于、小于、等于，
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var random = getRandom(1, 10);
+        while (true) { //死循环
+            var num = prompt("你来猜？输入1-10之间的数字");
+            if (num > random) {
+                alert('你踩大了');
+
+            } else if (num < random) {
+                alert('你踩小了');
+            } else {
+                alert('你踩对了');
+                break; //退出整个循环体
+            }
+        }
     </script>
 
 </body>
